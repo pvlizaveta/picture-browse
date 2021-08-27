@@ -1,0 +1,35 @@
+.Photos {
+  padding: 30px;
+}
+.Photos .image-container {
+  position: relative;
+  transition: transform 0.2s;
+}
+img {
+  padding-bottom: 30px;
+}
+.image-container:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.image-container:hover .overlay {
+  opacity: 1;
+}
+.overlay {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.8);
+  width: 90%;
+  height: 8vh;
+  transition: 0.5s ease;
+  opacity: 0;
+  bottom: 0;
+  margin-bottom: 30px;
+  font-size: 16px;
+  padding-left: 20px;
+  text-align: center;
+  color: rgba(255, 255, 255);
+  overflow: hidden;
+}
+.mr-2 {
+  margin-right: 5px;
+}

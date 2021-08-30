@@ -53,8 +53,13 @@ export default function PictureBrowse(props) {
 
   function addFavoritePicture(picture) {
     const newFavoriteList = [...favorites, picture];
-    setFavorites(newFavoriteList);
-    saveToLocalStorage(newFavoriteList);
+    const favoriteExists = favorites.filter(
+      (favorite) => favorite.id === picture.id
+    );
+    if (favoriteExists.length === 0) {
+      setFavorites(newFavoriteList);
+      saveToLocalStorage(newFavoriteList);
+    }
   }
 
   const removeFavoritePicture = (picture) => {

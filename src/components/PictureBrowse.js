@@ -88,7 +88,7 @@ export default function PictureBrowse(props) {
                       defaultValue={props.defaultKeyWord}
                     />
                   </div>
-                  <div className="col-3">
+                  <div className="col-2">
                     <input
                       type="submit"
                       className="SubmitButton"
@@ -96,28 +96,53 @@ export default function PictureBrowse(props) {
                       size="10"
                     />
                   </div>
+                  <div className="col-3">
+                    <button
+                      className="favorites btn btn-primary"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseWidthExample"
+                      aria-expanded="false"
+                      aria-controls="collapseWidthExample"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="18"
+                        height="18"
+                        fill="currentColor"
+                        className="bi bi-bookmark-heart-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path d="M2 15.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v13.5zM8 4.41c1.387-1.425 4.854 1.07 0 4.277C3.146 5.48 6.613 2.986 8 4.412z" />
+                      </svg>
+                      Favorites
+                    </button>
+                  </div>
                 </div>
               </div>
             </form>
           </div>
         </section>
 
-        <div className="row d-flex align-items-center mt-4 mb-4">
-          <div className="col"></div>
-          <div className="row">
-            <h1>Favorites</h1>
-            <Photos
-              photos={favorites}
-              handleFavoritesClick={removeFavoritePicture}
-              favoriteComponent={RemoveFavorites}
-            />
+        <div
+          className="row d-flex align-items-center mt-4 mb-4"
+          style={{ minHeight: "90vh" }}
+        >
+          <div className="collapse collapse-vertical" id="collapseWidthExample">
+            <div className="row">
+              <Photos
+                photos={favorites}
+                handleFavoritesClick={removeFavoritePicture}
+                favoriteComponent={RemoveFavorites}
+              />
+            </div>
           </div>
+          <Photos
+            photos={photos}
+            handleFavoritesClick={addFavoritePicture}
+            favoriteComponent={AddFavorites}
+          />
         </div>
-        <Photos
-          photos={photos}
-          handleFavoritesClick={addFavoritePicture}
-          favoriteComponent={AddFavorites}
-        />
       </div>
     );
   } else {

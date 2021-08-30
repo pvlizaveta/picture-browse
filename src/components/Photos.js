@@ -20,7 +20,7 @@ export default function Photos(props) {
                 />
                 <div
                   onClick={() => props.handleFavoritesClick(photo)}
-                  className="overlay d-flex align-items-center"
+                  className="overlay d-flex align-items-center "
                 >
                   <FavoriteComponent />
                 </div>

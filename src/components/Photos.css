@@ -18,7 +18,6 @@ img {
 .overlay {
   position: absolute;
   background: rgba(17, 17, 17, 0.5);
-
   width: 100%;
   height: 8vh;
   transition: 0.5s ease;

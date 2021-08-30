@@ -1,6 +1,10 @@
 html,
 body,
 .App {
+  width: 90%;
+  margin: 0 auto;
+  align-items: center;
   height: 100%;
   background: #141414;
+  font-family: "Montserrat", sans-serif;
 }

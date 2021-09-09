@@ -8,3 +8,15 @@ body,
   background: #141414;
   font-family: "Montserrat", sans-serif;
 }
+footer {
+  color: #6d6d6d;
+  text-align: center;
+  padding-bottom: 40px;
+}
+a {
+  text-decoration: none;
+  color: rgb(169, 213, 228);
+}
+a:hover {
+  color: rgb(169, 213, 228);
+}

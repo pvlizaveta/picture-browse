@@ -7,6 +7,12 @@ function App() {
       <main>
         <PictureBrowse defaultKeyWord="Pictures" />
       </main>
+      <footer>
+        <a href="https://github.com/pvlizaveta/picture-browse">
+          Open-source code
+        </a>{" "}
+        by Lizaveta Pauliushchyk
+      </footer>
     </div>
   );
 }

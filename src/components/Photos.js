@@ -1,8 +1,8 @@
 import React from "react";
 import "./Photos.css";
+import AddFavorites from "./AddFavorites";
 
 export default function Photos(props) {
-  const FavoriteComponent = props.favoriteComponent;
   if (props.photos) {
     return (
       <section className="Photos">
@@ -22,7 +22,7 @@ export default function Photos(props) {
                   onClick={() => props.handleFavoritesClick(photo)}
                   className="overlay d-flex align-items-center "
                 >
-                  <FavoriteComponent />
+                  <AddFavorites />
                 </div>
               </div>
             );
@@ -34,4 +34,5 @@ export default function Photos(props) {
     return null;
   }
 }
+
 ///<a href={photo.src.original} target="_blank" rel="noreferrer">  </a>

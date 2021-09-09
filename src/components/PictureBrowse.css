@@ -1,7 +1,12 @@
-.row {
+h6 {
+  color: rgb(169, 213, 228);
+  margin-top: 10px;
+  margin-left: 3.4vw;
+}
+.Searching .row {
   margin-top: 30px;
 }
-.col-6 {
+.row .col-6 {
   width: 42%;
   padding: 0;
   margin-left: 3.4vw;
@@ -9,7 +14,7 @@
 .Forms .search {
   width: 30vw;
   height: 5vh;
-  font-size: 18px;
+  font-size: 2vh;
   background-color: rgb(255, 255, 255, 20%);
   border: 0.1px solid rgb(0, 0, 0, 10%);
   border-radius: 10px;
@@ -17,7 +22,8 @@
   color: rgb(169, 213, 228);
   margin-right: 5px;
 }
-.col-2 {
+
+.row .col-2 {
   width: 24%;
 }
 .col-2 .SubmitButton {
@@ -27,40 +33,33 @@
   height: 5vh;
   border-radius: 10px;
   border: none;
-  font-size: 18px;
+  font-size: 2vh;
 }
-section {
-  display: inline;
-  color: rgb(169, 213, 228);
-}
-.col-3 button {
+
+.Photos .col-3 .favorites {
   background-color: black;
   color: rgb(169, 213, 228);
-  width: 12vw;
-  height: 5vh;
   border-radius: 10px;
   border: 1px solid rgb(169, 213, 228);
   float: right;
-  font-size: 16px;
-}
-.bi {
-  margin-right: 2px;
+  font-size: 2vh;
 }
 
-.btn-check:focus + .btn-primary,
+.Photos .btn {
+  width: 12vw;
+  height: 5vh;
+}
+
+.Photos .btn-check:focus + .btn-primary,
 .btn-primary:focus {
   background-color: rgb(169, 213, 228);
   color: rgb(0, 0, 0);
   box-shadow: 1px 1px 10px 5px rgb(172, 172, 172, 0.2);
 }
 
-.col-3 button:hover {
+.Photos .col-3 .favorites:hover {
   background-color: rgb(169, 213, 228);
   color: black;
   border: 1px solid rgb(169, 213, 228);
   transform: scale(1.1);
-}
-
-.collapse-vertical {
-  width: 50%;
 }

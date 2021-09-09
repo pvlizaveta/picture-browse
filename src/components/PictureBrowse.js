@@ -2,8 +2,8 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Photos from "./Photos";
 import "./PictureBrowse.css";
-import AddFavorites from "./AddFavorites";
 import RemoveFavorites from "./RemoveFavorites";
+import FavoritePhotos from "./FavoritePhotos";
 
 export default function PictureBrowse(props) {
   let [keyword, setKeyword] = useState(props.defaultKeyWord);
@@ -17,7 +17,7 @@ export default function PictureBrowse(props) {
   function search() {
     let pexelsApiKey =
       "563492ad6f9170000100000197f6ff9d6da8465e9b501c5ed1b157f4";
-    let pexelsApiUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=60`;
+    let pexelsApiUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=80`;
     axios
       .get(pexelsApiUrl, {
         headers: { Authorization: `Bearer ${pexelsApiKey}` },
@@ -84,8 +84,8 @@ export default function PictureBrowse(props) {
                       type="search"
                       autoFocus="on"
                       autoComplete="off"
+                      placeholder="What picture would you like to look up?"
                       onChange={handleKeywordChange}
-                      defaultValue={props.defaultKeyWord}
                     />
                   </div>
                   <div className="col-2">
@@ -123,25 +123,21 @@ export default function PictureBrowse(props) {
             </form>
           </div>
         </section>
-
+        <h6>( for example: night sky, monstera, puppy )</h6>
         <div
-          className="row d-flex align-items-center mt-4 mb-4"
+          className="row d-flex align-content-center mt-4 mb-4"
           style={{ minHeight: "90vh" }}
         >
           <div className="collapse collapse-vertical" id="collapseWidthExample">
             <div className="row">
-              <Photos
+              <FavoritePhotos
                 photos={favorites}
                 handleFavoritesClick={removeFavoritePicture}
                 favoriteComponent={RemoveFavorites}
               />
             </div>
           </div>
-          <Photos
-            photos={photos}
-            handleFavoritesClick={addFavoritePicture}
-            favoriteComponent={AddFavorites}
-          />
+          <Photos photos={photos} handleFavoritesClick={addFavoritePicture} />
         </div>
       </div>
     );

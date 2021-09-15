@@ -1,21 +1,21 @@
-.Photos {
+.Pictures {
   padding-top: 30px;
 }
-.Photos .image-container {
+.Pictures .image-container {
   position: relative;
   transition: transform 0.2s;
 }
-.Photos img {
+.Pictures img {
   padding-bottom: 30px;
 }
-.Photos .image-container:hover {
+.Pictures .image-container:hover {
   cursor: pointer;
   transform: scale(1.1);
 }
-.Photos .image-container:hover .overlay {
+.Pictures .image-container:hover .overlay {
   opacity: 1;
 }
-.Photos .overlay {
+.Pictures .overlay {
   position: absolute;
   background: rgba(17, 17, 17, 0.5);
   width: 100%;

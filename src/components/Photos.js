@@ -1,16 +1,17 @@
 import React from "react";
-import "./Photos.css";
 import AddFavorites from "./AddFavorites";
+
+import "./Photos.css";
 
 export default function Photos(props) {
   if (props.photos) {
     return (
-      <section className="Photos">
+      <section className="Pictures">
         <div className="row">
           {props.photos.map(function (photo, index) {
             return (
               <div
-                className="image-container d-flex justify-content-start col-3"
+                className="image-container d-flex justify-content-start col-2"
                 key={index}
               >
                 <img

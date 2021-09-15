@@ -1,53 +1,48 @@
-h6 {
+.Photos h6 {
   color: rgb(169, 213, 228);
-  margin-top: 10px;
-  margin-left: 3.4vw;
 }
-.Searching .row {
-  margin-top: 30px;
+.Photos .Searching .row {
+  margin-top: 40px;
 }
-.row .col-6 {
-  width: 42%;
+.Photos .Forms .row .col-6 {
+  width: 41%;
   padding: 0;
-  margin-left: 3.4vw;
+  margin-left: 60px;
 }
-.Forms .search {
-  width: 30vw;
-  height: 5vh;
-  font-size: 2vh;
+.Photos .Forms .search {
+  width: 100%;
+  height: 50px;
+  font-size: 20px;
   background-color: rgb(255, 255, 255, 20%);
-  border: 0.1px solid rgb(0, 0, 0, 10%);
+  border: none;
   border-radius: 10px;
   padding: 4px 10px;
   color: rgb(169, 213, 228);
-  margin-right: 5px;
 }
 
-.row .col-2 {
-  width: 24%;
+.Photos .Forms .row .col-2 {
+  width: 27%;
 }
-.col-2 .SubmitButton {
+.Photos .Forms .col-2 .SubmitButton {
   background-color: rgb(169, 213, 228);
   color: black;
-  width: 8vw;
-  height: 5vh;
+  width: 50%;
+  height: 50px;
   border-radius: 10px;
   border: none;
-  font-size: 2vh;
+  font-size: 20px;
 }
 
-.Photos .col-3 .favorites {
+.Photos .Forms .col-3 .favorites {
   background-color: black;
   color: rgb(169, 213, 228);
   border-radius: 10px;
   border: 1px solid rgb(169, 213, 228);
-  float: right;
-  font-size: 2vh;
+  font-size: 20px;
 }
-
 .Photos .btn {
-  width: 12vw;
-  height: 5vh;
+  width: 90%;
+  height: 50px;
 }
 
 .Photos .btn-check:focus + .btn-primary,
@@ -62,4 +57,9 @@ h6 {
   color: black;
   border: 1px solid rgb(169, 213, 228);
   transform: scale(1.1);
+}
+.Photos .bi-bookmark-heart-fill {
+  width: 25px;
+  height: 23px;
+  margin-right: 2px;
 }

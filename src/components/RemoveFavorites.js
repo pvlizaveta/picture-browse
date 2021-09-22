@@ -10,7 +10,7 @@ export default function RemoveFavorites() {
           width="16"
           height="16"
           fill="red"
-          class="bi bi-heart-fill 1"
+          className="bi bi-heart-fill 1"
           viewBox="0 0 16 16"
         >
           <path

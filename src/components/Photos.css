@@ -30,8 +30,12 @@
 }
 
 .mr-3 {
-  font-size: 15px;
-  margin-left: 30px;
-  padding: 0;
+  font-size: 20px;
+  padding: 10px;
   text-align: center;
+  margin-left: 10px;
+}
+.mr-3 .bi {
+  font-size: 20px;
+  margin-left: 10px;
 }

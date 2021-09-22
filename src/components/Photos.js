@@ -2,6 +2,7 @@ import React from "react";
 import AddFavorites from "./AddFavorites";
 
 import "./Photos.css";
+import "./responsive1.css";
 
 export default function Photos(props) {
   if (props.photos) {
@@ -11,7 +12,7 @@ export default function Photos(props) {
           {props.photos.map(function (photo, index) {
             return (
               <div
-                className="image-container d-flex justify-content-start col-2"
+                className="image-container d-flex justify-content-start col-4 col-lg-2"
                 key={index}
               >
                 <img

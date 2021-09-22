@@ -18,7 +18,7 @@ class AddFavorites extends Component {
     return (
       <div className="addtofav">
         <span onClick={this.boxClick} className="mr-2">
-          Add to favorites{" "}
+          Add to{" "}
         </span>
         <button style={{ color: this.state.bgColor }} onClick={this.boxClick}>
           <svg

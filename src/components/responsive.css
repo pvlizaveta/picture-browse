@@ -14,6 +14,7 @@
     height: 30px;
     font-size: 12px;
     padding: 2px 8px;
+    background-color: rgb(255, 255, 255, 20%);
   }
   .Photos .Forms .row .col-2 {
     width: 22%;
@@ -23,8 +24,9 @@
     color: black;
     width: 92% !important;
     height: 30px !important;
-    font-size: 13px !important;
+    font-size: 12px !important;
     margin-left: 0;
+    text-align: center;
     float: right;
   }
   .Photos .Forms .row .col-3 {

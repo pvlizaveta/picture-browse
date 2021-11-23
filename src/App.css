@@ -8,6 +8,13 @@ body,
   background: #141414;
   font-family: "Montserrat", sans-serif;
 }
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  color: transparent;
+  text-shadow: 0 0 0 #ffffff;
+}
 footer {
   color: #6d6d6d;
   text-align: center;
